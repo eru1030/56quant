@@ -31,5 +31,3 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests datetime tushare pandas time matplotlib mpl_finance talib seaborn
         python ./0main.py >> /dev/null
-      #sed -i "s/ServerChanKey/${{ secrets.ServerChanKey }}/g" config.cfg
-        #python ./0main.py >> /dev/null
