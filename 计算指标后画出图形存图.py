@@ -9,7 +9,7 @@ import seaborn as sns
 import talib as tl
 
 code=input("请输入代码（sh,sz）：")
-df = pd.read_csv("D://7star//kdata//%s.csv"%code)
+df = pd.read_csv("data//%s.csv"%code)
 df['date']=df['trade_date']
 df['date']=pd.to_datetime(df['date'], format='%Y%m%d')
 df = df.sort_values('date')
@@ -142,5 +142,5 @@ ax.set_title('%s'%code,fontsize=12,color='r')
 ax.legend(loc='upper center', fontsize=12);
 ax2.legend(loc='upper center', fontsize=10);
 ax3.legend(loc='upper center', fontsize=10);
-plt.savefig("C://Users//Administrator//Desktop//大数据研究//pic//%s.png"%code)
-plt.show()
+plt.savefig("pic//%s.png"%code)
+#plt.show()
